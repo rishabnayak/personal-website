@@ -1,10 +1,7 @@
 @font-face {
   font-family: 'MobiriseIcons';
-  src:  url('http://srbthemes.com/elvish/fonts/MobiriseIcons.eot?5dqoim');
-  src:  url('http://srbthemes.com/elvish/fonts/MobiriseIcons.eot?5dqoim#iefix') format('embedded-opentype'),
-    url('../fonts/mobirise-5dqoim.ttf') format('truetype'),
-    url('../fonts/mobirise-5dqoim.woff') format('woff'),
-    url('http://srbthemes.com/elvish/fonts/MobiriseIcons.svg?5dqoim#MobiriseIcons') format('svg');
+  src:url('../fonts/mobirise-5dqoim.ttf') format('truetype');
+  src:url('../fonts/mobirise-5dqoim.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
