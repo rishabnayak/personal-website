@@ -68,10 +68,19 @@
         <link rel="stylesheet" href="css/owl.transitions.css" media="none" onload="if(media!='all')media='all'">
 
         <!-- Custom style Css -->
-        <link rel="stylesheet" href="css/style.css" media="none" onload="if(media!='all')media='all'">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
+		
+	    <!-- START LOADER -->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner">Loading...</div>
+            </div>
+        </div>
+        <!-- END LOADER -->
+
 		
         <!-- START NAVBAR -->
         <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
@@ -122,10 +131,10 @@
                                 <div class="text-white text-center">
                                     <h1 class="header_title mb-0 mt-3">Hi, I'm <span class="element font-weight-bold" data-elements="Rishab!,a Biochemist.,a Developer.,a Photographer."></span></h1>
                                     <ul class="social_home list-unstyled text-center pt-4">
-										<li class="list-inline-item"><a href="https://github.com/rishab2113"><i class="fab fa-github" alt="github"></i></a></li>
-                                    	<li class="list-inline-item"><a href="https://www.facebook.com/nayak.rishab"><i class="fab fa-facebook-square" alt="facebook"></i></a></li>
-                                      	<li class="list-inline-item"><a href="https://www.linkedin.com/in/rishabnayak/"><i class="fab fa-linkedin" alt="linkedin"></i></a></li>
-                                      	<li class="list-inline-item"><a href="https://www.instagram.com/nayakrishab/"><i class="fab fa-instagram" alt="instagram"></i></a></li>
+										<li class="list-inline-item"><a href="https://github.com/rishab2113" alt="github"><i class="fab fa-github" alt="github"></i></a></li>
+                                    	<li class="list-inline-item"><a href="https://www.facebook.com/nayak.rishab" alt="facebook"><i class="fab fa-facebook-square" alt="facebook"></i></a></li>
+                                      	<li class="list-inline-item"><a href="https://www.linkedin.com/in/rishabnayak/" alt="linkedin"><i class="fab fa-linkedin" alt="linkedin"></i></a></li>
+                                      	<li class="list-inline-item"><a href="https://www.instagram.com/nayakrishab/" alt="instagram"><i class="fab fa-instagram" alt="instagram"></i></a></li>
                                     </ul>
                                     <div class="header_btn">
                                         <a href="/content/CV-Rishab.pdf" class="btn btn-outline-custom btn-rounded mt-4">Download CV</a>
@@ -166,7 +175,7 @@
                                 <li class="list-inline-item mr-0 text-muted">Photographer</li>
                                 <li class="list-inline-item mr-0 text-muted">Developer</li>
                             </ul>
-                            <p class="text-muted mt-3">Rishab studies biochemistry and biomedical engineering and is passionate about the application of computer vision to medical diagnostics, harnessing the recent advances in technology. His passion led him to design image recognition algorithms and pattern detectors, using concepts of artificial intelligence and machine learning.</p>
+                            <p class="text-muted mt-3">I study biochemistry and biomedical engineering and am passionate about the applications of computer vision in medical diagnostics, harnessing the recent advances in technology. My passion led me to design image recognition algorithms and pattern detectors, using concepts of artificial intelligence and machine learning.</p>
                         </div>
                     </div>
                 </div>
@@ -312,52 +321,6 @@
             </div>
         </section>
         <!-- END SERVICES -->
-
-        <!-- START FUNFACTS -->
-        <section class="section bg-funfact">
-            <div class="bg-overlay"></div>
-            <div class="container">
-                <div class="row" id="counter">
-                    <div class="col-lg-3">
-                        <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
-                            <div class="lan_fun_icon mb-3">
-                                <i class="mbri-timer h1"></i>
-                            </div>
-                            <h1 class="lan_fun_value mb-1" data-count="20">4</h1>
-                            <p class="lan_fun_name mb-0">Working Hours</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
-                            <div class="lan_fun_icon mb-3">
-                                <i class="mbri-gift h1"></i>
-                            </div>
-                            <h1 class="lan_fun_value mb-1" data-count="6400">10</h1>
-                            <p class="lan_fun_name mb-0">Completed Projects</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
-                            <div class="lan_fun_icon mb-3">
-                                <i class="mbri-user h1"></i>
-                            </div>
-                            <h1 class="lan_fun_value mb-1" data-count="2389">201</h1>
-                            <p class="lan_fun_name mb-0">No. of Clients</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="text-center lan_funfact p-4 mt-3 rounded text-white">
-                            <div class="lan_fun_icon mb-3">
-                                <i class="mbri-users h1"></i>
-                            </div>                       
-                            <h1 class="lan_fun_value mb-1" data-count="653">2</h1>
-                            <p class="lan_fun_name mb-0">Team Member</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END FUNFACTS -->
 
         <!-- START EXP. & EDU. -->
         <section class="section" id="education">
@@ -537,92 +500,92 @@
 					<div class="col-lg-4 work_item medtech research image">
                     	<div class="work_box">
             				<h2>ProFlo-U</h2>
-            					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            					<p>A mobile based application to quantify the microalbumin levels in urine, an early marker of forthcoming kidney damage.</p>
+            					<p><a class="btn btn-secondary" href="https://github.com/rishab2113/Prantae" role="button">View on GitHub »</a></p>
           				</div>
                 	</div>
 					<div class="col-lg-4 work_item medtech research">
                     	<div class="work_box">
             				<h2>AuNP Biosensors</h2>
-            					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            					<p>Optimized production of Gold Nanoparticle based biosensors that can be used to quantify microRNA.</p>
+            					<p><a class="btn btn-secondary" href="" role="button">Coming soon »</a></p>
           				</div>
                 	</div>
 					<div class="col-lg-4 work_item research">
                     	<div class="work_box">
             				<h2>Complex Chemistry</h2>
-            					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            					<p>An evaluation of the kinetics and rate of aquation of trans-dichlorobis(ethylenediamine) cobalt(III) chloride</p>
+            					<p><a class="btn btn-secondary" href="/content/Paper-Chem.pdf" role="button">View paper »</a></p>
           				</div>
                 	</div> 
 					<div class="col-lg-4 work_item ai at medtech">
                     	<div class="work_box">
             				<h2>Ava</h2>
-            					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            					<p>A personal healthcare assistant using voice recognition technology to enable better access to medical assistance</p>
+            					<p><a class="btn btn-secondary" href="https://github.com/rishab2113/ava" role="button">View on GitHub »</a></p>
           				</div>
                 	</div>
 					<div class="col-lg-4 work_item image ai at">
                     	<div class="work_box">
             				<h2>SurroundView</h2>
-            					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            					<p>Provides the user contextual awareness, giving them audio feedback on the objects found in their surroundings.</p>
+            					<p><a class="btn btn-secondary" href="" role="button">Coming soon »</a></p>
           				</div>
                 	</div>
 					<div class="col-lg-4 work_item image ai at">
                     	<div class="work_box">
             				<h2>CafeCam</h2>
-            					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            					<p>Aids the visually impaired to find empty tables in restaurants and recognize known faces, thereby providing contextual awareness.</p>
+            					<p><a class="btn btn-secondary" href="https://github.com/rishab2113/PerkinsHacks_nodejs" role="button">View on GitHub »</a></p>
           				</div>
                 	</div>
 					<div class="col-lg-4 work_item medtech at">
                     	<div class="work_box">
             				<h2>Pill Dispenser</h2>
-            					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            					<p>A low-cost fully automated IOT Pill Dispenser with a remotely accessible setup UI, all from a RasPi. </p>
+            					<p><a class="btn btn-secondary" href="https://github.com/rishab2113/Personal-Website" role="button">View on GitHub »</a></p>
           				</div>
                 	</div>
 					<div class="col-lg-4 work_item image ai research">
                     	<div class="work_box">
             				<h2>PlugID</h2>
-            					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            					<p>A Performance Analysis of Neural Networks to Identify Plugs and Connectors from an Image, created with Wolfram Language.</p>
+            					<p><a class="btn btn-secondary" href="https://github.com/rishab2113/PlugID" role="button">View on GitHub »</a></p>
           				</div>
                 	</div>
 					<div class="col-lg-4 work_item research medtech">
                     	<div class="work_box">
             				<h2>DNA-RNA Binding</h2>
-            					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            					<p>Computational Screening of compounds having specific binding to DNA-RNA hybrids, using Chimera, AutoDock and parts of Amber</p>
+            					<p><a class="btn btn-secondary" href="" role="button">Coming soon »</a></p>
           				</div>
                 	</div>   
                     <div class="col-lg-4 work_item research">
                     	<div class="work_box">
             				<h2>Telomere Research</h2>
-            					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            					<p>A Novel Bioengineered Adenovirus to Reverse the Effects of Biological Aging by Replenishing Telomeres</p>
+            					<p><a class="btn btn-secondary" href="/content/Paper-Telomeres.pdf" role="button">View paper »</a></p>
           				</div>
                     </div>
                  	<div class="col-lg-4 work_item research">
                     	<div class="work_box">
             				<h2>BioDiesel Research</h2>
-            					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            					<p>Esterifying Free Fatty Acids and Phospholipids in Algal Oil to Increase the Yield of BioDiesel from Feedstock</p>
+            					<p><a class="btn btn-secondary" href="/content/Paper-Biodiesel.pdf" role="button">View paper »</a></p>
           				</div>
                 	</div>
                  	<div class="col-lg-4 work_item ai image">
                     	<div class="work_box">
             				<h2>LipTracker</h2>
-            					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            					<p>Using Artificial Neural Networks and Machine Learning to convert lip movements to text using MATLAB</p>
+            					<p><a class="btn btn-secondary" href="" role="button">Coming soon »</a></p>
           				</div>
                 	</div>
                  	<div class="col-lg-4 work_item image ai">
                     	<div class="work_box">
             				<h2>Plant Disease ID</h2>
-            					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+            					<p>Using advanced image processing algorithms to identify a plant disease from its image. <br> (Designed in MATLAB)</p>
+            					<p><a class="btn btn-secondary" href="" role="button">Coming soon »</a></p>
           				</div>
                 	</div>         	           	             	                	                 				
 				</div>
@@ -643,8 +606,8 @@
                         </div>
                     </div>
                 </div>  
-                <div class="row mt-4 pt-4">
-                    <div class="col-lg-4">
+                <div class="row mt-4 pt-4 justify-content-center">
+					<div class="col-lg-3">
                         <div class="text-center mt-4">
                             <div>
                                 <i class="fas fa-phone fa-3x"></i>
@@ -654,6 +617,8 @@
                                 <p class="text-muted">+1 857-364-1410</p>
                             </div>
                         </div>
+					</div>
+					<div class="col-lg-3">
                         <div class="text-center mt-4">
                             <div>
                                 <i class="far fa-envelope fa-3x"></i>
@@ -663,6 +628,8 @@
                                 <p class="text-muted">rishab@bu.edu</p>
                             </div>
                         </div>
+					</div>
+					<div class="col-lg-3">
                         <div class="text-center mt-4">
                             <div>
                                 <i class="fas fa-map-marker-alt fa-3x"></i>
@@ -672,46 +639,6 @@
                                 <p class="text-muted">Boston University, Boston, MA.</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="contact_form">
-                            <form>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group mt-2">
-                                            <label for="name" class="font-weight-bold">Name</label>
-                                            <input name="name" id="name" type="text" class="form-control" placeholder="Your name..." required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group mt-2">
-                                            <label for="email" class="font-weight-bold">Email address</label>
-                                            <input name="email" id="email" type="email" class="form-control" placeholder="Your email..."  required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group mt-2">
-                                            <label for="subject" class="font-weight-bold">Subject</label>
-                                            <input type="text" class="form-control" id="subject" placeholder="Your Subject.."  required=""/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="form-group mt-2">
-                                            <label for="comments" class="font-weight-bold">Message</label>
-                                            <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Your message..." required=""></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12 text-right">
-                                        <input type="submit" class="btn btn-custom" value="Send Message">
-                                    </div>
-                                </div>
-                            </form>
-                        </div> 
-                    </div>
                 </div>                          
             </div>
         </section> 
@@ -727,10 +654,10 @@
                         </div>
                         <div class="float-right float_none mt-2 mb-2">
                             <ul class="list-inline fot_social mb-0">
-								<li class="list-inline-item"><a href="https://github.com/rishab2113" class="social-icon text-muted"><i class="fab fa-github" alt="github"></i></a></li>
-                                <li class="list-inline-item"><a href="https://www.facebook.com/nayak.rishab" class="social-icon text-muted"><i class="fab fa-facebook-f" alt="facebook"></i></a></li>
-                                <li class="list-inline-item"><a href="https://www.linkedin.com/in/rishabnayak/" class="social-icon text-muted"><i class="fab fa-linkedin-in" alt="linkedin"></i></a></li>
-                                <li class="list-inline-item"><a href="https://www.instagram.com/nayakrishab/" class="social-icon text-muted"><i class="fab fa-instagram" alt="instagram"></i></a></li>
+								<li class="list-inline-item"><a href="https://github.com/rishab2113" class="social-icon text-muted" alt="github"><i class="fab fa-github" alt="github"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.facebook.com/nayak.rishab" class="social-icon text-muted" alt="facebook"><i class="fab fa-facebook-f" alt="facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/in/rishabnayak/" class="social-icon text-muted" alt="linkedin"><i class="fab fa-linkedin-in" alt="linkedin"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.instagram.com/nayakrishab/" class="social-icon text-muted" alt="instagram"><i class="fab fa-instagram" alt="instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -755,10 +682,7 @@
         <!-- MFP JS -->
         <script src="js/jquery.magnific-popup.min.js"></script>
         <!--PORTFOLIO FILTER JS-->
-        <script src="js/isotope.js"></script>  
-        <!--PARTICLES ANIMATE JS-->
-        <script src="js/particles.js"></script>  
-        <script src="js/particles.app.js"></script>
+        <script src="js/isotope.js"></script>
         <!-- PARALLAX JS -->
         <script src="js/parallax.js"></script>      
         <!-- OWL CAROUSEL -->
