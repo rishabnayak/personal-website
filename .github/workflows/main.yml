@@ -11,7 +11,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: ftps4.us.freehostia.com
+          server: rishabnayak.me
           username: risnay
           password: ${{ secrets.ftp_password }}
           server-dir: /www/rishabnayak.me/
