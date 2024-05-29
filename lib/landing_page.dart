@@ -1,6 +1,3 @@
-import 'dart:convert';
-import 'dart:io';
-
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:rishabnayak/colors.dart';
@@ -339,7 +336,7 @@ buildSocialRow() {
       ),
       const SizedBox(width: 16.0),
       GestureDetector(
-        onTap: () => _launchURL('https://instagram.com/rishabnayak'),
+        onTap: () => _launchURL('https://instagram.com/nayakrishab'),
         child: Image.asset(
           'assets/images/instagram.png',
           width: 24.0,
