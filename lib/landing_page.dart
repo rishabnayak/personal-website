@@ -15,11 +15,12 @@ class _LandingPageState extends State<LandingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.darkGrey,
-      body: Container(
-        padding: const EdgeInsets.all(16.0),
-        child: Stack(
-          children: [
-            LayoutBuilder(
+      body: Center(
+        child: SingleChildScrollView(
+          physics: const AlwaysScrollableScrollPhysics(),
+          child: Container(
+            padding: const EdgeInsets.all(16.0),
+            child: LayoutBuilder(
               builder: (BuildContext context, BoxConstraints constraints) {
                 if (constraints.maxWidth > 600) {
                   return buildWideLayout();
@@ -28,8 +29,7 @@ class _LandingPageState extends State<LandingPage> {
                 }
               },
             ),
-            easterEgg(),
-          ],
+          ),
         ),
       ),
     );
@@ -376,8 +376,8 @@ buildSocialRow() {
 easterEgg() {
   return Center(
     child: Column(
-      mainAxisAlignment: MainAxisAlignment.end,
       children: [
+        const SizedBox(height: 16.0),
         Text.rich(
           TextSpan(
             children: [
@@ -417,25 +417,28 @@ easterEgg() {
 
 buildNarrowLayout() {
   return Column(
-    children: <Widget>[buildProfilePhoto(), buildProfileInfo()],
+    children: <Widget>[buildProfilePhoto(), buildProfileInfo(), easterEgg()],
   );
 }
 
 buildWideLayout() {
-  return Column(
-    mainAxisAlignment: MainAxisAlignment.center,
-    children: <Widget>[
-      Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          buildProfilePhoto(),
-          const SizedBox(width: 16.0),
-          Expanded(
-            child: buildProfileInfo(),
-          ),
-        ],
-      ),
-    ],
+  return Center(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            buildProfilePhoto(),
+            const SizedBox(width: 16.0),
+            Expanded(
+              child: buildProfileInfo(),
+            ),
+          ],
+        ),
+        easterEgg(),
+      ],
+    ),
   );
 }
 
