@@ -1,7 +1,8 @@
+import 'dart:convert';
+import 'dart:io';
+
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
 import 'package:rishabnayak/colors.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -310,14 +311,6 @@ buildSocialRow() {
   return Row(
     mainAxisAlignment: MainAxisAlignment.center,
     children: <Widget>[
-      const Text(
-        'Get in touch: ',
-        style: TextStyle(
-          fontSize: 16.0,
-          fontWeight: FontWeight.w300,
-          color: AppColors.yellow,
-        ),
-      ),
       GestureDetector(
         onTap: () => _launchURL('https://github.com/rishabnayak'),
         child: Image.asset(
@@ -360,6 +353,18 @@ buildSocialRow() {
           'assets/images/x.png',
           width: 20.0,
           height: 20.0,
+        ),
+      ),
+      const SizedBox(width: 16.0),
+      OutlinedButton(
+        onPressed: () => _launchURL(
+            'https://firebasestorage.googleapis.com/v0/b/rishabnayak-personal-website.appspot.com/o/RNayak_Resume.pdf?alt=media&token=90a5ad41-90c9-4c20-a8fa-5bd9a1842002'),
+        child: const Text(
+          'Resume',
+          style: TextStyle(
+              fontSize: 16.0,
+              fontWeight: FontWeight.w300,
+              color: AppColors.yellow),
         ),
       ),
     ],
