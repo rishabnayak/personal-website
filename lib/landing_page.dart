@@ -17,14 +17,19 @@ class _LandingPageState extends State<LandingPage> {
       backgroundColor: AppColors.darkGrey,
       body: Container(
         padding: const EdgeInsets.all(16.0),
-        child: LayoutBuilder(
-          builder: (BuildContext context, BoxConstraints constraints) {
-            if (constraints.maxWidth > 600) {
-              return buildWideLayout();
-            } else {
-              return buildNarrowLayout();
-            }
-          },
+        child: Stack(
+          children: [
+            LayoutBuilder(
+              builder: (BuildContext context, BoxConstraints constraints) {
+                if (constraints.maxWidth > 600) {
+                  return buildWideLayout();
+                } else {
+                  return buildNarrowLayout();
+                }
+              },
+            ),
+            easterEgg(),
+          ],
         ),
       ),
     );
@@ -361,19 +366,58 @@ buildSocialRow() {
           style: TextStyle(
               fontSize: 16.0,
               fontWeight: FontWeight.w300,
-              color: AppColors.yellow),
+              color: AppColors.orange),
         ),
       ),
     ],
   );
 }
 
+easterEgg() {
+  return Center(
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: [
+        Text.rich(
+          TextSpan(
+            children: [
+              const TextSpan(
+                text: "...if you think you've seen this exact color scheme on ",
+                style: TextStyle(
+                  fontSize: 4,
+                  fontWeight: FontWeight.w300,
+                  color: AppColors.mediumGrey,
+                ),
+              ),
+              TextSpan(
+                text: "another website, ",
+                recognizer: TapGestureRecognizer()
+                  ..onTap = () => _launchURL('https://letsboogyboogy.com'),
+                style: const TextStyle(
+                  fontSize: 4,
+                  fontWeight: FontWeight.w300,
+                  color: AppColors.orange,
+                ),
+              ),
+              const TextSpan(
+                text: "no you haven't 🙃",
+                style: TextStyle(
+                  fontSize: 4,
+                  fontWeight: FontWeight.w300,
+                  color: AppColors.mediumGrey,
+                ),
+              )
+            ],
+          ),
+        ),
+      ],
+    ),
+  );
+}
+
 buildNarrowLayout() {
   return Column(
-    children: <Widget>[
-      buildProfilePhoto(),
-      buildProfileInfo(),
-    ],
+    children: <Widget>[buildProfilePhoto(), buildProfileInfo()],
   );
 }
 
