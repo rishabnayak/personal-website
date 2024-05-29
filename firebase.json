@@ -1,10 +1,18 @@
 {
   "hosting": {
     "public": ".",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  },
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "rishabnayak-personal-website",
+          "configurations": {
+            "web": "1:964537189191:web:dbbbd408053566f67f8262"
+          }
+        }
+      }
+    }
   }
 }

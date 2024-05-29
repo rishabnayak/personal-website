@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="2x Founder | MLH Top 50 | GCP Professional Cloud Architect">
+  <meta name="author" content="Rishab Nayak" />
+
+  <script type='application/ld+json'>
+  		{
+  		  "@context": "http://www.schema.org",
+  		  "@type": "person",
+  		  "name": "Rishab Nayak",
+        "alumniOf": "Boston University",
+  		  "url": "rishabnayak.com",
+  		  "email": "rishab@rishabnayak.com",
+  		}
+   		</script>
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Rishab Nayak">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.ico" />
+
+  <title>Rishab Nayak</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      background-color: #1e1e1e;
+    }
+
+    #splash {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.5);
+      transition: transform 0.3s ease;
+    }
+
+    #progressBar {
+      position: absolute;
+      top: calc(50% + 70px);
+      left: 50%;
+      transform: translateX(-50%);
+      width: 30%;
+      height: 10px;
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    #progressBarFill {
+      height: 100%;
+      width: 0;
+      background-color: #4caf50;
+      transition: width 0.5s ease;
+      border-radius: 5px;
+    }
+
+    @keyframes jump {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+  </style>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+</head>
+
+<body>
+  <img id="splash" class="center" src="splash/logo.png" alt="" aria-hidden="true">
+  <div id="progressBar">
+    <div id="progressBarFill"></div>
+  </div>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+
+</html>
