@@ -177,7 +177,7 @@ buildProfileInfo() {
               ),
             ),
             const TextSpan(
-              text: 'Data Science, AI, ',
+              text: 'Embedded Linux Devices, AI, ',
               style: TextStyle(
                 fontSize: 16.0,
                 fontWeight: FontWeight.w300,
