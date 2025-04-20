@@ -15,8 +15,7 @@ jobs:
         with:
           channel: "stable"
       - run: >-
-          flutter clean && flutter pub get && flutter build web --web-renderer canvaskit
-          --release
+          flutter clean && flutter pub get && flutter build web --release
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
