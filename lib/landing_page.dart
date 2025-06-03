@@ -244,8 +244,6 @@ buildProfileInfo() {
             ),
             TextSpan(
               text: 'Joyn',
-              recognizer: TapGestureRecognizer()
-                ..onTap = () => _launchURL('https://joynchat.com'),
               style: const TextStyle(
                 fontSize: 16.0,
                 fontWeight: FontWeight.w300,
@@ -373,51 +371,9 @@ buildSocialRow() {
   );
 }
 
-easterEgg() {
-  return Center(
-    child: Column(
-      children: [
-        const SizedBox(height: 16.0),
-        Text.rich(
-          TextSpan(
-            children: [
-              const TextSpan(
-                text: "...if you think you've seen this exact color scheme on ",
-                style: TextStyle(
-                  fontSize: 4,
-                  fontWeight: FontWeight.w300,
-                  color: AppColors.mediumGrey,
-                ),
-              ),
-              TextSpan(
-                text: "another website, ",
-                recognizer: TapGestureRecognizer()
-                  ..onTap = () => _launchURL('https://letsboogyboogy.com'),
-                style: const TextStyle(
-                  fontSize: 4,
-                  fontWeight: FontWeight.w300,
-                  color: AppColors.orange,
-                ),
-              ),
-              const TextSpan(
-                text: "no you haven't 🙃",
-                style: TextStyle(
-                  fontSize: 4,
-                  fontWeight: FontWeight.w300,
-                  color: AppColors.mediumGrey,
-                ),
-              )
-            ],
-          ),
-        ),
-      ],
-    ),
-  );
-}
-
 buildNarrowLayout() {
   return Column(
-    children: <Widget>[buildProfilePhoto(), buildProfileInfo(), easterEgg()],
+    children: <Widget>[buildProfilePhoto(), buildProfileInfo()],
   );
 }
 
@@ -436,7 +392,6 @@ buildWideLayout() {
             ),
           ],
         ),
-        easterEgg(),
       ],
     ),
   );
