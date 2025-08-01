@@ -358,7 +358,7 @@ buildSocialRow() {
       const SizedBox(width: 16.0),
       OutlinedButton(
         onPressed: () => _launchURL(
-            'https://firebasestorage.googleapis.com/v0/b/rishabnayak-personal-website.appspot.com/o/RNayak_Resume.pdf?alt=media&token=90a5ad41-90c9-4c20-a8fa-5bd9a1842002'),
+            'https://firebasestorage.googleapis.com/v0/b/rishabnayak-personal-website.appspot.com/o/RNayak_Resume.pdf?alt=media&token=a400dc6e-3de7-46a6-8242-e689c4b5477d'),
         child: const Text(
           'Resume',
           style: TextStyle(
