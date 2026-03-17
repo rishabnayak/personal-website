@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/assets/fonts/SourceCodePro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/assets/fonts/SourceCodePro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/assets/fonts/SourceCodePro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/assets/fonts/SourceCodePro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/assets/fonts/SourceCodePro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("/assets/fonts/SourceCodePro-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+:root {
+  font-family: "Source Code Pro", monospace;
+  color-scheme: dark;
+  background-color: #1e1e1e;
+  color: #a9a9a9;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --background: #1e1e1e;
+  --text: #a9a9a9;
+  --yellow: #ffd700;
+  --orange: #ffa500;
+  --green: #a5e95f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.landing-layout {
+  width: min(100%, 980px);
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+}
+
+.portrait-column {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-column h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--yellow);
+}
+
+.tagline {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text);
+  text-align: center;
+}
+
+.bio-copy {
+  margin-top: 16px;
+}
+
+.bio-copy p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.55;
+  text-align: left;
+}
+
+.bio-copy p + p {
+  margin-top: 16px;
+}
+
+.bio-base {
+  color: var(--text);
+}
+
+.bio-highlight {
+  color: var(--green);
+}
+
+.bio-link {
+  color: var(--orange);
+}
+
+.social-row {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link img {
+  display: block;
+  object-fit: contain;
+}
+
+.resume-link {
+  padding: 6px 14px;
+  border: 1px solid var(--orange);
+  border-radius: 6px;
+  color: var(--orange);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.bio-link:hover,
+.bio-link:focus-visible,
+.resume-link:hover,
+.resume-link:focus-visible,
+.social-link:hover,
+.social-link:focus-visible {
+  opacity: 0.85;
+}
+
+.bio-link:focus-visible,
+.resume-link:focus-visible,
+.social-link:focus-visible {
+  outline: 1px solid var(--orange);
+  outline-offset: 4px;
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 24px 16px;
+  }
+
+  .landing-layout {
+    grid-template-columns: 1fr;
+  }
+}
