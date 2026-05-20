@@ -1,5 +1,3 @@
-import type { SiteContent } from "./content";
-
 export type BioFragment = {
   text: string;
   tone?: "base" | "highlight" | "link";
