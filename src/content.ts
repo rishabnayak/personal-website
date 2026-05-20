@@ -1,3 +1,5 @@
+import type { SiteContent } from "./content";
+
 export type BioFragment = {
   text: string;
   tone?: "base" | "highlight" | "link";
@@ -33,7 +35,8 @@ export type SiteContent = {
 export const siteContent: SiteContent = {
   seo: {
     title: "Rishab Nayak",
-    description: "2x Founder | MLH Top 50 | GCP Professional Cloud Architect",
+    description:
+      "Hacking on tools to make every marketing hit repeatable. Previously cofounded Mount ($3M+ raised, GC-led) and Joyn. Shipped agentic infrastructure at OXOS Medical. MS CS, Boston University.",
     author: "Rishab Nayak",
     email: "rishab@rishabnayak.com",
     url: "https://rishabnayak.com",
@@ -42,50 +45,37 @@ export const siteContent: SiteContent = {
   },
   profile: {
     name: "Rishab Nayak",
-    tagline: "2x Founder | MLH Top 50 | GCP Professional Cloud Architect",
+    tagline: "Hacking on tools to make every marketing hit repeatable",
     portrait: "/assets/images/profilePhoto.jpeg",
     bio: [
       [
-        { text: "As a ", tone: "base" },
-        { text: "seasoned founder ", tone: "highlight" },
-        { text: "and ", tone: "base" },
-        { text: "engineer, ", tone: "highlight" },
-        { text: "I bring a track record of ", tone: "base" },
-        { text: "driving innovation and efficiency ", tone: "highlight" },
-        { text: "across multiple tech ventures. With a ", tone: "base" },
-        { text: "Master of Science ", tone: "highlight" },
-        { text: "in ", tone: "base" },
-        { text: "Computer Science ", tone: "highlight" },
-        { text: "from ", tone: "base" },
-        { text: "Boston University ", tone: "highlight" },
-        { text: "and expertise in domains spanning ", tone: "base" },
-        { text: "Embedded Linux Devices, AI, ", tone: "highlight" },
-        { text: "and ", tone: "base" },
-        { text: "Cloud Computing. ", tone: "highlight" },
-        { text: "I have ", tone: "base" },
-        { text: "co-founded ", tone: "highlight" },
-        { text: "successful startups including ", tone: "base" },
+        { text: "Hacking on AI tools ", tone: "highlight" },
+        { text: "to make ", tone: "base" },
+        { text: "marketing hits repeatable.", tone: "highlight" },
+      ],
+      [
+        { text: "Previously ", tone: "base" },
+        { text: "cofounded ", tone: "highlight" },
         {
           text: "Mount",
           tone: "link",
           href: "https://rentmount.com",
         },
-        { text: " and ", tone: "base" },
+        { text: " — peer-to-peer rental marketplace; ", tone: "base" },
+        { text: "$3.5M raised ", tone: "highlight" },
+        { text: "with ", tone: "base" },
+        { text: "Tribeca + General Catalyst", tone: "highlight" },
+        { text: "; ", tone: "base" },
+        { text: "PhocusWire Top 25 '23", tone: "highlight" },
+        { text: ". Cofounded ", tone: "base" },
         { text: "Joyn", tone: "link" },
-        { text: ", raising a total of ", tone: "base" },
-        { text: "over $3M in funding.", tone: "highlight" },
+        { text: " — AI-powered communication used by execs to ", tone: "base" },
+        { text: "close an Asia↔US SPAC deal", tone: "highlight" },
+        { text: ".", tone: "base" },
       ],
       [
-        { text: "I'm passionate about ", tone: "base" },
-        {
-          text: "solving complex problems, leading high-performing teams, ",
-          tone: "highlight",
-        },
-        { text: "and continuously ", tone: "base" },
-        {
-          text: "pushing the boundaries of technology.",
-          tone: "highlight",
-        },
+        { text: "MS CS, Boston University", tone: "highlight" },
+        { text: ". ", tone: "base" },
       ],
     ],
   },
