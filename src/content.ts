@@ -23,7 +23,6 @@ export type SiteContent = {
   };
   profile: {
     name: string;
-    tagline: string;
     portrait: string;
     bio: BioFragment[][];
   };
@@ -43,7 +42,6 @@ export const siteContent: SiteContent = {
   },
   profile: {
     name: "Rishab Nayak",
-    tagline: "Hacking on tools to make every marketing hit repeatable",
     portrait: "/assets/images/profilePhoto.jpeg",
     bio: [
       [

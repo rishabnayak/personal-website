@@ -117,14 +117,6 @@ a {
   color: var(--yellow);
 }
 
-.tagline {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 400;
-  color: var(--green);
-  text-align: center;
-}
-
 .bio-copy {
   margin-top: 16px;
 }

@@ -21,7 +21,6 @@ function App() {
 
         <div className="content-column">
           <h1>{siteContent.profile.name}</h1>
-          <p className="tagline">{siteContent.profile.tagline}</p>
 
           <div className="bio-copy">
             {siteContent.profile.bio.map((paragraph, paragraphIndex) => (
