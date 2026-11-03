@@ -44,3 +44,7 @@ jobs:
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_RISHABNAYAK_PERSONAL_WEBSITE }}"
           channelId: live
           projectId: rishabnayak-personal-website
+          # Pinned: firebase-tools 15.34.x checks serviceusage.services.get,
+          # which this service account lacks. 15.22.4 was the last version that
+          # deployed successfully here. Unpin once the SA has Service Usage Consumer.
+          firebaseToolsVersion: 15.22.4
