@@ -33,7 +33,7 @@ export const siteContent: SiteContent = {
   seo: {
     title: "Rishab Nayak",
     description:
-      "Hacking on tools to make every marketing hit repeatable. Previously cofounded Mount ($3M+ raised, GC-led) and Joyn. Shipped agentic infrastructure at OXOS Medical. MS CS, Boston University.",
+      "Hacking on tools to make every marketing hit repeatable. Previously cofounded Mount (~$4M raised, Tribeca + GC) and Joyn. Shipped agentic infrastructure at OXOS Medical. MS CS, Boston University.",
     author: "Rishab Nayak",
     email: "rishab@rishabnayak.com",
     url: "https://rishabnayak.com",
@@ -58,7 +58,7 @@ export const siteContent: SiteContent = {
           href: "https://rentmount.com",
         },
         { text: " — peer-to-peer rental marketplace; ", tone: "base" },
-        { text: "$3.5M raised ", tone: "highlight" },
+        { text: "~$4M raised ", tone: "highlight" },
         { text: "with ", tone: "base" },
         { text: "Tribeca + General Catalyst", tone: "highlight" },
         { text: "; ", tone: "base" },
